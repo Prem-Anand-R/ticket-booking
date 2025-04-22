@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:prod": "tsc && vite build --mode production",
+    "build:prod": "tsc && vite build --mode production && node ./scripts/postbuild.js",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest run",
